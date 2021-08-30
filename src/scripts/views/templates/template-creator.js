@@ -98,8 +98,8 @@ const createRestoItemTemplate = (resto) => `
   <article>
     <a href="${`/#/detail/${resto.id}`}">
       <picture>
-        <source media="(max-width: 600px)" srcset="${CONFIG.BASE_IMAGE_URL}small/${resto.pictureId}">
-        <img class="post-item__thumbnail lazyload" src=
+        <source media="(max-width: 600px)" data-srcset="${CONFIG.BASE_IMAGE_URL}small/${resto.pictureId}">
+        <img class="post-item__thumbnail lazyload" data-src=
         "${CONFIG.BASE_IMAGE_URL}medium/${resto.pictureId}" 
         alt="Gambar suasana restoran ${resto.name} di ${resto.city}" 
         />
